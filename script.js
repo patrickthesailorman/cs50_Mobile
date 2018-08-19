@@ -9,7 +9,6 @@ const list = document.getElementById('todo-list')
 const itemCountSpan = document.getElementById('item-count')
 const uncheckedCountSpan = document.getElementById('unchecked-count')
 
-function newTodo(todo) {
-  this.list.push(todo);
+function newTodo() {
   alert('New TODO button clicked!')
 }
