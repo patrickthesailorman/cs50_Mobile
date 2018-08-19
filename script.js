@@ -9,7 +9,14 @@ const list = document.getElementById('todo-list')
 const itemCountSpan = document.getElementById('item-count')
 const uncheckedCountSpan = document.getElementById('unchecked-count')
 
-function newTodo(todo) {
-  this.TODO_ITEM.push(todo);
-  alert('New TODO button clicked!')
+let todoList = {
+  todos: [],
+  displayTodos: function() {
+    console.log('My Todos:', this.todos);
+  },
+  newTodo: function(todo) {
+    this.todos.push(todo);
+    this.displayTodos();
+    alert('New TODO button clicked!')
+  },
 }
